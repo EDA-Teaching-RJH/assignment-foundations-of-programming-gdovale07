@@ -87,6 +87,6 @@ def run_system_monolith():
             print("Idling...")
             break 
             
-        print("End of cycle.")
+        print("End of cycle.")   
 
 run_system_monolith()
