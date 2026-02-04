@@ -98,7 +98,6 @@ def run_system_moonlith():
     print("FLEET MANAGER MENU")
 
 #activates the options in the main menu
-def display_menu():
     while True:
         print("MENU")
         print("1. View crew members")
