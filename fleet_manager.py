@@ -10,13 +10,13 @@ def view_crew_members(name,rank,division,crew_no):
     option = input("what would you like to do today?")
     if option == "1":
         print("crew member list:")
-for i in range(len(name)):
-    print(name[i] + " - " + rank[i])
+    for i in range(len(name)):
+        print(name[i] + " - " + rank[i])
 # used for adding members to the database
 def add_new_member(name,rank,division,crew_no):
     newname = input("name of new member")
-newrank = input("rank of new member")
-newdiv = input("division of new member")
+    newrank = input("rank of new member")
+    newdiv = input("division of new member")
 # updates member details for the user
 def update_member(name,rank,division,crew_no):
             updateid = int(input("what is the member's ID number?"))
