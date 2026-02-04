@@ -31,8 +31,9 @@ def update_member(name,rank,division,crew_no):
 def remove_crew(name,rank,division,crew_no):
             removalcrew = int(input("what is the member's ID number?"))
             position = crew_no.index(removalcrew)
-            print(removalcrew)
-            print(rank[removalcrew])
+            name.pop(position)
+            rank.pop(position)
+            division.pop(position)
             print("member successfully removed")
 # main menu initial screen
 def run_system_moonlith():
