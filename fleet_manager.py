@@ -29,11 +29,10 @@ def update_member(name,rank,division,crew_no):
             print("new details confirmed")
 # removes members from the crew
 def remove_crew(name,rank,division,crew_no):
-            removal = input("what is the ID of the member would you like to remove?")
-            index = crew_no.index(removal)
-            name.pop(index)
-            rank.pop(index)
-            division.pop(index)
+            removalcrew = int(input("what is the member's ID number?"))
+            position = crew_no.index(removalcrew)
+            print(removalcrew)
+            print(rank[removalcrew])
             print("member successfully removed")
 # main menu initial screen
 def run_system_moonlith():
