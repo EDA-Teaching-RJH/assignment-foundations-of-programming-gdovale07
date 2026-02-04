@@ -5,6 +5,17 @@ crew_no = [101,102,103,104]
 
 active = True
 
+def view_crew_members(name,rank,division,crew_no):
+    pass
+
+def add_new_member(name,rank,division,crew_no):
+    pass
+
+def update_member(name,rank,division,crew_no):
+    pass
+def remove_crew(name,rank,division,crew_no):
+    pass
+
 def run_system_moonlith():
     print("LOADING...")
     print("FLEET MANAGER MENU")
