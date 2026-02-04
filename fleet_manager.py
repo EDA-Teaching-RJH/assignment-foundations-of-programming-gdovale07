@@ -6,15 +6,33 @@ crew_no = [101,102,103,104]
 active = True
 
 def view_crew_members(name,rank,division,crew_no):
-    pass
+    option = input("what would you like to do today?")
+    if option == "1":
+        print("crew member list:")
+for i in range(len(name)):
+    print(name[i] + " - " + rank[i])
 
 def add_new_member(name,rank,division,crew_no):
-    pass
+    newname = input("name of new member")
+newrank = input("rank of new member")
+newdiv = input("division of new member")
 
 def update_member(name,rank,division,crew_no):
-    pass
+            updateid = int(input("what is the member's ID number?"))
+            position = crew_no.index(updateid)
+            print(position)
+            print(rank[position])
+            newrank = input("what rank would you like to change the member to?")
+            rank[position] = newrank
+            print("new details confirmed")
+
 def remove_crew(name,rank,division,crew_no):
-    pass
+            removal = input("what is the ID of the member would you like to remove?")
+            index = crew_no.index(removal)
+            name.pop(index)
+            rank.pop(index)
+            division.pop(index)
+            print("member successfully removed")
 
 def run_system_moonlith():
     print("LOADING...")
@@ -31,33 +49,17 @@ def run_system_moonlith():
         option = input("what would you like to do today?")
 
         if option == "1":
-            print("crew member list:")
-            
-            for i in range(len(name)):
-                print(name[i] + " - " + rank[i])
+            view_crew_members(name,rank,division,crew_no)
 
         elif option == "2":
-            newname = input("name of new member")
-            newrank = input("rank of new member")
-            newdiv = input("division of new member")
+            add_new_member(name,rank,division,crew_no)
 
         elif option == "3":
-            updateid = int(input("what is the member's ID number?"))
-            position = crew_no.index(updateid)
-            print(position)
-            print(rank[position])
-            newrank = input("what rank would you like to change the member to?")
-            rank[position] = newrank
-            print("new details confirmed")
+            update_member(name,rank,division,crew_no)
 
 
         elif option == "4":
-            removal = input("what is the ID of the member would you like to remove?")
-            index = crew_no.index(removal)
-            name.pop(index)
-            rank.pop(index)
-            division.pop(index)
-            print("member successfully removed")
+           remove_crew(name,rank,division,crew_no)
        
         elif option == "5":
             print("thank you for using this service, have a great day")
