@@ -84,6 +84,9 @@ def filter_by_division(name,division):
 def calculate_payroll(rank):
      pass
 
+def count_officers(rank):
+     pass
+
 
 # calls main code
 run_system_moonlith()
