@@ -73,7 +73,16 @@ def filter_by_division(name,division):
             print(name[i], "-", division[i])
      
 def calculate_payroll(rank):
-    pass
+    pay = {
+        "crew": 200,
+        "sergeant": 300,
+        "lieutenant": 400,
+        "commander": 500
+    }
+    totalpay = 0
+    for r in rank: 
+        total+=pay_rates.get(r, 0)
+        print("total payroll: £")
 
 def count_officers(rank):
     pass
