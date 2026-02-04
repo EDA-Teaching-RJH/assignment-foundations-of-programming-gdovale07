@@ -50,6 +50,7 @@ def remove_crew(name,rank,division,crew_no):
     else:
         print("ID not found, please try again")
 
+#this is a search tool which can find members the user is looking for
 def search_crew(name,rank,division,crew_no):
     crewid = int(input("what is the id of the crew member youre looking for?"))
     if crewid in crew_no:
@@ -60,13 +61,15 @@ def search_crew(name,rank,division,crew_no):
     else:
         print("member not found, please try again")
 
+#this function filters the members by their division in the crew
 def filter_by_division(name,division):
     filterchoice = input("enter division to filter by below")
     
     for i in range(len(division)):
         if division[i] == filterchoice:
             print(name[i], "-", division[i])
-     
+
+#this function knows the values which the members earn, but it cannot calculate and assign so the user can see
 def calculate_payroll(rank):
     pay = {
         "crew": 200,
@@ -76,7 +79,8 @@ def calculate_payroll(rank):
     }
     
     totalpay = 0
-    
+
+#can count the officers in a rank and tell you 
 def count_officers(rank):
     ranks = ["commander", "lieutenant"]
 
@@ -151,3 +155,5 @@ def run_system_moonlith():
 
 # calls main code
 run_system_moonlith()
+
+##### all bugs and defects have been reported and explained in the word doc attached to the submission ofmy assignment on moodle!!!
