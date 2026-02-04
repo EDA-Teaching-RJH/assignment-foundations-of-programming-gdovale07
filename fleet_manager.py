@@ -68,5 +68,9 @@ def run_system_moonlith():
 # prevents invalid inputs from crashing the code
         else:
             print("invalid input, please try again")
+
+def init_database():
+     pass
+
 # calls main code
 run_system_moonlith()
