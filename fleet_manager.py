@@ -22,8 +22,8 @@ def run_system_moonlith():
         if option == "1":
             print("crew member list:")
             
-            for i in range(len(n)):
-                print(n[i] + " - " + r[i])
+            for i in range(len(name)):
+                print(name[i] + " - " + rank[i])
 
         elif option == "2":
             newname = input("name of new member")
