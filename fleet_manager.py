@@ -48,6 +48,9 @@ def run_system_moonlith():
             division.pop(index)
             print("member successfully removed")
        
-        else option == "5":
+        elif option == "5":
             print("thank you for using this service, have a great day")
             break
+
+        else:
+            print("invalid input, please try again")
