@@ -1,9 +1,11 @@
 # declaring the names of all members along with their additional info
+def init_database()
 name = ["James","George","Paul","Alex"]
 rank = ["crew","commander","lieutenant","sergeant"]
 division = ["enforcement","operations","defence","supervision"]
 crew_no = [101,102,103,104]
 
+#declaring that the system is active
 active = True
 
 # allows for user to view crew members in database
@@ -48,12 +50,6 @@ def remove_crew(name,rank,division,crew_no):
         print("member successfully removed")
     else:
         print("ID not found, please try again")
-
-def init_database():
-    pass
-
-def display_menu():
-    pass
 
 def search_crew(name,rank,division,crew_no):
     crewid = int(input("what is the id of the crew member youre looking for?"))
@@ -103,6 +99,7 @@ def run_system_moonlith():
     print("FLEET MANAGER MENU")
 
 #activates the options in the main menu
+def display_menu():
     while True:
         print("MENU")
         print("1. View crew members")
