@@ -1,5 +1,5 @@
 # declaring the names of all members along with their additional info
-def init_database()
+def init_database():
 name = ["James","George","Paul","Alex"]
 rank = ["crew","commander","lieutenant","sergeant"]
 division = ["enforcement","operations","defence","supervision"]
