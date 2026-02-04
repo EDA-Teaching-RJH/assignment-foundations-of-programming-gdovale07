@@ -79,13 +79,23 @@ def calculate_payroll(rank):
         "lieutenant": 400,
         "commander": 500
     }
+    
     totalpay = 0
+    
     for r in rank: 
         total+=totalpay.get(r, 0)
-        print("total payroll: £")
+    
+    print("total payroll: £")
 
 def count_officers(rank):
-    pass
+    ranks = ["commander", "lieutenant"]
+
+    count = 0
+
+    for r in rank:
+        if r in ranks:
+            count +=1
+    print("number of officers", count)
 
 # main menu initial screen
 def run_system_moonlith():
@@ -120,25 +130,6 @@ def run_system_moonlith():
 # prevents invalid inputs from crashing the code
         else:
             print("invalid input, please try again")
-
-def init_database():
-     pass
-
-def display_menu():
-    pass
-
-def search_crew(name,rank,division,crew_no):
-     pass
-
-def filter_by_division(name,division):
-     pass
-
-def calculate_payroll(rank):
-     pass
-
-def count_officers(rank):
-     pass
-
 
 # calls main code
 run_system_moonlith()
