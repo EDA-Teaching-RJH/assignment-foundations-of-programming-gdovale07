@@ -104,11 +104,11 @@ def run_system_moonlith():
         print("2. Add new crew member")
         print("3. update crew details")
         print("4. remove crew member")
-        print("5. leave menu")
-        print("6. search members")
-        print("7. filter by division")
-        print("8. calculate payroll")
-        print("9. perform an officer count")
+        print("5. search members")
+        print("6. filter by division")
+        print("7. calculate payroll")
+        print("8. perform an officer count")
+        print("9. leave")
 
 # asks the user for input from the main menu display
         option = input("what would you like to do today?")
