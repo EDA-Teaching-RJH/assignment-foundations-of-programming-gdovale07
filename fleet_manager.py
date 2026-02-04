@@ -18,3 +18,24 @@ def run_system_moonlith():
         print("5. leave menu")
 
         option = input("what would you like to do today?")
+
+        if option == "1":
+            print("crew member list:")
+            
+            for i in range(len(n)):
+                print(n[i] + " - " + r[i])
+
+        elif option == "2":
+            newname = input("name of new member")
+            newrank = input("rank of new member")
+            newdiv = input("division of new member")
+
+        elif option == "3":
+            break
+
+        elif option == "4":
+            break
+
+        else option == "5":
+            print("thank you for using this service, have a great day")
+            break
