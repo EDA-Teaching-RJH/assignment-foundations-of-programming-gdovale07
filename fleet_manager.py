@@ -54,3 +54,5 @@ def run_system_moonlith():
 
         else:
             print("invalid input, please try again")
+
+run_system_moonlith()
