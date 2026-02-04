@@ -31,7 +31,12 @@ def run_system_moonlith():
             newdiv = input("division of new member")
 
         elif option == "3":
-            break
+            updateid = int(input("what is the member's ID number?"))
+            position = crew_no.index(updateid)
+            print(position)
+            print(rank[position])
+
+
 
         elif option == "4":
             break
