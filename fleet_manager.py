@@ -74,5 +74,11 @@ def init_database():
 
 def display_menu():
     pass
+
+def search_crew(name,rank,division,crew_no):
+     pass
+
+def filter_by_division(name,division):
+     pass
 # calls main code
 run_system_moonlith()
