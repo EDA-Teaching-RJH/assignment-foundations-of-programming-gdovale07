@@ -41,8 +41,8 @@ def run_system_moonlith():
 
 
         elif option == "4":
-            removal = input("which member would you like to remove?")
-            index = name.index(removal)
+            removal = input("what is the ID of the member would you like to remove?")
+            index = crew_no.index(removal)
             name.pop(index)
             rank.pop(index)
             division.pop(index)
