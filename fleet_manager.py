@@ -40,7 +40,11 @@ def init_database():
      
 
 def display_menu():
-        while True:
+        # main menu initial screen
+def run_system_moonlith():
+    print("LOADING...")
+    print("FLEET MANAGER MENU")
+while True:
         print("MENU")
         print("1. View crew members")
         print("2. Add new crew member")
