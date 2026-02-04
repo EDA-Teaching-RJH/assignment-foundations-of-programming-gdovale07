@@ -66,7 +66,11 @@ def search_crew(name,rank,division,crew_no):
         print("member not found, please try again")
 
 def filter_by_division(name,division):
-    pass
+    filterchoice = input("enter division to filter by below")
+    
+    for i in range(len(division)):
+        if division[i] == filterchoice:
+            print(name[i], "-", division[i])
      
 def calculate_payroll(rank):
     pass
