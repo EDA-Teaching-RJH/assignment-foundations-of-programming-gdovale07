@@ -35,6 +35,21 @@ def remove_crew(name,rank,division,crew_no):
             rank.pop(position)
             division.pop(position)
             print("member successfully removed")
+
+def init_database():
+     
+
+def display_menu():
+
+
+def search_crew(name,rank,division,crew_no):
+     
+def filter_by_division(name,division):
+
+def calculate_payroll(rank):
+
+def count_officers(rank):   
+
 # main menu initial screen
 def run_system_moonlith():
     print("LOADING...")
