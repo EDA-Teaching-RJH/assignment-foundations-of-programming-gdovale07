@@ -101,6 +101,7 @@ def count_officers(rank):
 def run_system_moonlith():
     print("LOADING...")
     print("FLEET MANAGER MENU")
+
 #activates the options in the main menu
     while True:
         print("MENU")
@@ -109,24 +110,51 @@ def run_system_moonlith():
         print("3. update crew details")
         print("4. remove crew member")
         print("5. leave menu")
+        print("6. search members")
+        print("7. filter by division")
+        print("8. calculate payroll")
+        print("9. perform an officer count")
+
 # asks the user for input from the main menu display
         option = input("what would you like to do today?")
+
 # directs user to option 1
         if option == "1":
             view_crew_members(name,rank,division,crew_no)
+
 # directs user to option 2
         elif option == "2":
             add_new_member(name,rank,division,crew_no)
+
 # directs user to option 3
         elif option == "3":
             update_member(name,rank,division,crew_no)
+
 # directs user to option 4
         elif option == "4":
            remove_crew(name,rank,division,crew_no)
-# directs user to option 5 and breaks the code from looping 
+
+#directs user to option 5
         elif option == "5":
-            print("thank you for using this service, have a great day")
+            search_crew(name,rank,division,crew_no)
+        
+#directs user to option 6
+        elif option == "6":
+            filter_by_division(name,division)
+
+#directs user to option 7
+        elif option == "7":
+            calculate_payroll(rank)
+
+#directs user to option 8
+        elif option == "8":
+            count_officers(rank)
+
+#breaks the loop and exits main menu
+        elif option == "9":
+            print("thank you for using the main menu, have a great day")
             break
+
 # prevents invalid inputs from crashing the code
         else:
             print("invalid input, please try again")
