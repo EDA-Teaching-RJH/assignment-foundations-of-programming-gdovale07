@@ -72,5 +72,7 @@ def run_system_moonlith():
 def init_database():
      pass
 
+def display_menu():
+    pass
 # calls main code
 run_system_moonlith()
