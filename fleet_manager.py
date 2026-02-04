@@ -80,5 +80,10 @@ def search_crew(name,rank,division,crew_no):
 
 def filter_by_division(name,division):
      pass
+
+def calculate_payroll(rank):
+     pass
+
+
 # calls main code
 run_system_moonlith()
