@@ -77,11 +77,6 @@ def calculate_payroll(rank):
     
     totalpay = 0
     
-    for r in rank: 
-        total+=totalpay.get(r, 0)
-    
-    print("total payroll: £")
-
 def count_officers(rank):
     ranks = ["commander", "lieutenant"]
 
