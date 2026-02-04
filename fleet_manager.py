@@ -35,7 +35,9 @@ def run_system_moonlith():
             position = crew_no.index(updateid)
             print(position)
             print(rank[position])
-
+            newrank = input("what rank would you like to change the member to?")
+            rank[position] = newrank
+            print("new details confirmed")
 
 
         elif option == "4":
