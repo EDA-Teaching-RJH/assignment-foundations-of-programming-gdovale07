@@ -41,8 +41,13 @@ def run_system_moonlith():
 
 
         elif option == "4":
-            break
-
+            removal = input("which member would you like to remove?")
+            index = name.index(removal)
+            name.pop(index)
+            rank.pop(index)
+            division.pop(index)
+            print("member successfully removed")
+       
         else option == "5":
             print("thank you for using this service, have a great day")
             break
