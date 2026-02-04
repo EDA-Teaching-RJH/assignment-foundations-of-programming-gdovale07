@@ -40,8 +40,34 @@ def init_database():
      
 
 def display_menu():
-
-
+        while True:
+        print("MENU")
+        print("1. View crew members")
+        print("2. Add new crew member")
+        print("3. update crew details")
+        print("4. remove crew member")
+        print("5. leave menu")
+# asks the user for input from the main menu display
+        option = input("what would you like to do today?")
+# directs user to option 1
+        if option == "1":
+            view_crew_members(name,rank,division,crew_no)
+# directs user to option 2
+        elif option == "2":
+            add_new_member(name,rank,division,crew_no)
+# directs user to option 3
+        elif option == "3":
+            update_member(name,rank,division,crew_no)
+# directs user to option 4
+        elif option == "4":
+           remove_crew(name,rank,division,crew_no)
+# directs user to option 5 and breaks the code from looping 
+        elif option == "5":
+            print("thank you for using this service, have a great day")
+            break
+# prevents invalid inputs from crashing the code
+        else:
+            print("invalid input, please try again")
 def search_crew(name,rank,division,crew_no):
      
 def filter_by_division(name,division):
