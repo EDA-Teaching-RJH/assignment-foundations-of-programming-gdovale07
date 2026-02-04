@@ -17,6 +17,7 @@ def add_new_member(name,rank,division,crew_no):
     newname = input("name of new member")
     newrank = input("rank of new member")
     newdiv = input("division of new member")
+    print("new member added")
 # updates member details for the user
 def update_member(name,rank,division,crew_no):
             updateid = int(input("what is the member's ID number?"))
