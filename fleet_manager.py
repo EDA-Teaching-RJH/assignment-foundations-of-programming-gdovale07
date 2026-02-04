@@ -16,3 +16,5 @@ def run_system_moonlith():
         print("3. update crew details")
         print("4. remove crew member")
         print("5. leave menu")
+
+        option = input("what would you like to do today?")
