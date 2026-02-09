@@ -55,7 +55,7 @@ def search_crew(name,rank,division,crew_no):
     crewid = int(input("what is the id of the crew member youre looking for?"))
     if crewid in crew_no:
         position = crew_no.index(crewid)
-        print("name:, name[position]")
+        print("name:", name[position])
         print("rank", rank[position])
         print("division", division[position])
     else:
